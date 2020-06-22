@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catatanku</title>
+	</head>
+	<body>
+		<h1>Note List</h1>
+		<p><a href="{% url 'dashboard:insert' %}">Add Note</a></p>
+		<div class="notewrapper">
+			{% for item in note %}
+			<div class="note">
+				<h3>{{ item.judul }}</h3>
+				<p>{{ item.isi }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
