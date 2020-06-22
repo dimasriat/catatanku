@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(75, 123, 236);
+}
+
+.wrapper {
+	width: 50%;
+} 
+
+header, nav, main, .note {
+	margin: 0.5rem 0;
+	padding: 0 0.5rem;
+	border: 2px solid black;
+	background-color: white;
+}
+
+.control {
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5rem 0;
+}
+
+table {
+	width: 100%;
+}
+
+input[type="text"], textarea {
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+}

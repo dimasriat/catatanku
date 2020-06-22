@@ -10,25 +10,17 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<h1>Note {{ tipe }}</h1>
+				<h1>Note App</h1>
 			</header>
 			<nav>
 				<p>
 					<a href="{% url 'dashboard:list' %}" class="button"
-						>Kembali 🏃</a
+						>Menuju ke aplikasi</a
 					>
 				</p>
 			</nav>
 			<main>
-				<form method="POST">
-					{% csrf_token %}
-					<table>
-						{{ noteForm.as_table }}
-					</table>
-					<div class="control">
-						<button type="submit">Kirim</button>
-					</div>
-				</form>
+				<p>{{ deskripsi }}</p>
 			</main>
 		</div>
 	</body>

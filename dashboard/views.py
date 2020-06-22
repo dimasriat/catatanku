@@ -16,7 +16,8 @@ def insert_view(req):
 			noteForm.save()
 		return redirect("dashboard:list")
 	context = {
-		'noteForm' : noteForm
+		'noteForm' : noteForm,
+		'tipe': 'Insert',
 	}
 	return render(req, 'insert.html', context)
 
@@ -36,6 +37,7 @@ def update_view(req, update_id):
 			noteForm.save()
 		return redirect("dashboard:list")
 	context = {
-		'noteForm': noteForm
+		'noteForm': noteForm,
+		'tipe': 'Update',
 	}
 	return render(req, 'insert.html', context)

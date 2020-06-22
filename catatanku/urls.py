@@ -17,11 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 from django.http import HttpResponse
-def index(req):
-	return HttpResponse('<h1>TESTTT</h1><a href="/dashboard">sini...</a>')
+
+from . import views
 
 urlpatterns = [
-	url(r'^$', index),
+	url(r'^$', views.index),
     url(r'^admin/', admin.site.urls),
 	url(r'^dashboard/', include('dashboard.urls')),
 ]
