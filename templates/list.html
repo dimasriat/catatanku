@@ -13,6 +13,8 @@
 			<div class="note">
 				<h3>{{ item.judul }}</h3>
 				<p>{{ item.isi }}</p>
+				<p><a href="{% url 'dashboard:update' item.id %}">update</a></p>
+				<p><a href="{% url 'dashboard:delete' item.id %}">delete</a></p>
 			</div>
 			{% endfor %}
 		</div>
